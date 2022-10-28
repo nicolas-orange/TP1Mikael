@@ -34,7 +34,7 @@ public class Tp1MikaelApplication {
 		String result = jsonb.toJson(pers1);
 		result+=jsonb.toJson(pers2);
 		System.out.println(result);
-
+// just a test
 	}
 
 }
