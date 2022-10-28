@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TP JavaScript</title>
+<script src="js/tp.js"></script>
+
+<!--
+    <style type="text/css">
+		.c1 {text-align: center;}
+		.c2 {color: blue;}
+	</style>
+	-->
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+	<p id="p1">Premier paragraphe</p>
+	<p class="c1">Paragraphe de classe c1</p>
+	<p class="c1">Paragraphe de classe c1</p>
+
+	<script>
+		for (let i = 0; i < 4; i++)
+			document.body.insertAdjacentHTML("afterbegin",
+					"<p>Contenu inséré par JavaScript !</p>");
+		insertions();
+	</script>
+
+<button id="idClear">RAZ</button>
+<script src="js/button.js"></script>
+
+	<p style="text-align: center; color: red;">Paragraphe centré et
+		rouge</p>
+	<p class="c1">Ce paragraphe centré</p>
+	<p class="c2">Ce paragraphe sera rouge</p>
+	<p class="c1 c2">Ce paragraphe sera centré et rouge</p>
+	<p>
+		Get your greeting <a href="/greeting">here</a>
+	</p>
+	<p>
+		Get your directory <a href="/annuaire">here</a>
+	</p>
+</body>
+</html>
