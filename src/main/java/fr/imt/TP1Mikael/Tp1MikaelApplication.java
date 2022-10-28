@@ -30,10 +30,12 @@ public class Tp1MikaelApplication {
 		pers1.setName("Personne");
 		Person pers2 = new Person("Water", "Roger", "66", "London");
 		
-		Jsonb jsonb = JsonbBuilder.create();
-		String result = jsonb.toJson(pers1);
-		result+=jsonb.toJson(pers2);
-		System.out.println(result);
+//		Jsonb jsonb = JsonbBuilder.create();
+//		String result = jsonb.toJson(pers1);
+//		result+=jsonb.toJson(pers2);
+//		System.out.println(result);
+		
+		
 // just a test
 	}
 
