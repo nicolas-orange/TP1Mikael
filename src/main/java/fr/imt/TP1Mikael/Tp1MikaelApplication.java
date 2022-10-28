@@ -1,6 +1,10 @@
 package fr.imt.TP1Mikael;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.json.bind.Jsonb;
+import javax.json.bind.JsonbBuilder;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -20,6 +24,16 @@ public class Tp1MikaelApplication {
 		System.out.println(p1);
 		System.out.println(p2);
 		System.out.println(p3);
+		
+		Person pers1 = new Person();
+		pers1.setSurname("Paul");
+		pers1.setName("Personne");
+		Person pers2 = new Person("Water", "Roger", "66", "London");
+		
+		Jsonb jsonb = JsonbBuilder.create();
+		String result = jsonb.toJson(pers1);
+		result+=jsonb.toJson(pers2);
+		System.out.println(result);
 
 	}
 
